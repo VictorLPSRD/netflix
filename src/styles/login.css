@@ -1,0 +1,204 @@
+body{
+    background-color: #000000;
+	color: #fff;
+    overflow-x: hidden;
+  
+}
+
+.cabecalho {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    box-sizing: border-box;;
+}
+
+
+.cabecalho .logo {
+    display: flex;
+	gap: 30px;
+}
+.cabecalho .logo img {
+	width: 150px;
+}
+
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.home {
+	display: flex;
+	position: relative;
+
+}
+.home.imagem-fundo{
+    display: flex;
+	position: relative;
+	object-fit: cover;
+}
+
+.home::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+}
+
+
+.form-container {
+    color: #fff;
+    width: 350px;
+    height: 500px;
+    background-color: rgba(55, 49, 49, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .title {
+    text-align: left;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px 0 30px 0;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .input {
+    color: #fff;
+    background-color: #282626;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+  }
+  
+  .page-link {
+    text-decoration: underline;
+    margin: 0;
+    text-align: end;
+    color: #747474;
+    text-decoration-color: #747474;
+  }
+  
+  .page-link-label {
+    cursor: pointer;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+  }
+  
+  .page-link-label:hover {
+    color: #000;
+  }
+  
+  .form-btn {
+    color: rgb(246, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid rgb(255, 7, 7);
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  .form-btn:hover {
+    color: white;
+  }
+  
+  .form-btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: rgb(255, 8, 8);
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .form-btn:hover::before {
+    width: 160%;
+  }
+  
+  .sign-up-label {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #747474;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+
+  
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .apple-login-button,
+  .google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    gap: 5px;
+  }
+  
+  .apple-login-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .google-login-button {
+    border: 2px solid #747474;
+  }
+  
+  .apple-icon,
+  .google-icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }

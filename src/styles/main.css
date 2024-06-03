@@ -1,0 +1,414 @@
+body{
+    background-color: #000000;
+	color: #fff;
+    overflow-x: hidden;
+  
+}
+
+.cabecalho {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    box-sizing: border-box;;
+}
+
+
+.cabecalho .logo {
+    display: flex;
+	gap: 30px;
+}
+.cabecalho .logo img {
+	width: 150px;
+}
+
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu #Login {
+    padding: 10px;
+    margin-top: 15px;
+	height: 50px;
+	width: 10px;
+	font-size: 16px;
+	font-family: "Chalet";
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.cabecalho .menu #Login:hover {
+    background-color: #ff0000;
+}
+
+.cabecalho .menu #idiomas{
+    color: #fff;
+    background-color: #494949;
+    width: 120px;
+    height: 20px;
+
+}
+
+.home {
+	display: flex;
+	position: relative;
+
+}
+.home.imagem-fundo{
+    display: flex;
+	position: relative;
+	object-fit: cover;
+}
+
+.home::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+}
+
+.home .informacoes {
+	position: absolute;
+	z-index: 1;
+	min-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; /* Adicionado para centralizar horizontalmente */
+	gap: 32px;
+	padding: 5vw;
+	max-width: 780px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Adicionado para centralizar absolutamente */
+}
+
+.home .informacoes h1 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-align: center;
+	font-size: 60px;
+    height: 300px;
+	text-shadow: #000;
+}
+
+.home .informacoes p {
+	font-family: "Chalet";
+	font-size: 22px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.input-group {
+	display: flex;
+	gap: 5px;
+}
+
+.input-group input {
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid #494949;
+	background-color: rgba(19, 19, 19, 0.8);
+	color: #fff;
+	margin-bottom: 10px;
+	width: 80%;
+	font-size: 16px;
+}
+
+.input-group button {
+	padding: 10px;
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+	font-family: "Chalet";
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.input-group button:hover {
+	background-color: #ff0000;
+}
+.anucio .anu {
+    background-color: #381229;
+	border-radius: 15px;
+	padding: 60px;
+    margin-top: 150px;
+	margin-bottom: 20px;
+	animation: pulse 2s infinite;
+    margin-left: 140px;
+	margin-right: 180px;
+}
+.anucio .anu:hover {
+	background: linear-gradient(90deg, rgba(131, 42, 88, 0.95), rgba(57, 14, 36, 0.95) 100%, transparent 100%);
+	transform: scale(1.05);
+}
+
+.anucio .anu h2 {
+	color: #ffffff;
+	font-size: 35px;
+	margin-left: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.anucio .anu p {
+	color: #c7a6c1;
+	margin-bottom: 22px;
+	font-size: 19px;
+	margin-left: 15px;
+	font-weight: "Chalet";
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.anucio .anu a {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 0.5px solid #fff;
+	border-radius: 4px;
+	font-family: "ChaletComprime";
+	font-size: 18px;
+	text-align: center;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	margin-left: 15PX;
+	width: 20%;
+	transition: all 0.3s ease-in;
+}
+
+
+.anucio .anu a:hover {
+	background-color: #fff;
+	border: 1px solid #000000;
+	color: #000;
+}
+.anucio .anu {
+	background-color: #381229;
+	border-radius: 20px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 30px;
+	margin-bottom: 19px;
+	margin-left: 140px;
+	margin-right: 180px;
+	overflow: hidden;
+	transition: 0.2s;
+
+}
+
+.anucio .anu:hover {
+	background: linear-gradient(90deg, rgba(131, 42, 88, 0.95), rgba(57, 14, 36, 0.95) 100%, transparent 100%);
+	transform: scale(1.05);
+}
+
+.anucio .anu h2 {
+	color: #ffffff;
+	font-size: 35px;
+	margin-left: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.anucio .anu p {
+	color: #c7a6c1;
+	margin-bottom: 22px;
+	font-size: 19px;
+	margin-left: 15px;
+	font-weight: "Chalet";
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.anucio .anu a {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 0.5px solid #fff;
+	border-radius: 4px;
+	font-family: "ChaletComprime";
+	font-size: 18px;
+	text-align: center;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	margin-left: 15PX;
+	width: 20%;
+	transition: all 0.3s ease-in;
+}
+
+
+.anucio .anu a:hover {
+	background-color: #fff;
+	border: 1px solid #000000;
+	color: #000;
+}
+
+.anucio1 {
+	margin-left: 150px;
+	margin-top: 60px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.list_bnt {
+    width: 200%; /* ou qualquer largura desejada */
+    max-width: 1040px; /* largura máxima para o contêiner */
+    margin: 0 auto;
+}
+
+.list_bnt h2{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	text-align: center;
+	line-height: 1.6;
+	margin-top: 50PX;
+
+}
+
+.list_bnt .button {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 25px;
+	display: block;
+	padding: 30px 60px;
+	margin: 5px 0;
+	background-color: #6365674a;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	width: 100%;
+	text-align: left;
+}
+
+.list_bnt .button:hover {
+	background-color: #4d535b;
+}
+.list_bnt .explanation {
+	background-color: #6365674a ;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 25px;
+	margin-left: 25px;
+	margin: 1px 0 12px 0;
+	padding: 10px;
+	border-radius: 5px;
+	display: none;
+}
+.list_bnt .explanation p{
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.input2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 50px;
+}
+
+.input-group2 {
+    text-align: center;
+	color: #d4d3d3;
+	font-family: "ChaletComprime";
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.inline-input {
+    display: flex;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	
+}
+
+.inline-input input{
+    margin-right: 5px; 
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid #494949;
+	background-color: rgba(19, 19, 19, 0.8);
+	color: #fff;
+	margin-bottom: 10px;
+	width: 80%;
+	font-size: 16px;
+}
+
+.inline-input button{
+	padding: 10px;
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+	font-family: "Chalet";
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.inline-input button:hover {
+	background-color: #ff0000;
+}
+
+footer {
+	background-color: #000000;
+	color: #fff;
+	padding: 20px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left: 80px;
+}
+
+.listaslink{
+	margin-right: 250px;
+	align-items: center;
+	padding: 30px;
+	color: #e8e8e8;
+	font-weight: bolder;
+	font-size: 15px;
+	display: flex;
+	gap: 30px;
+}
+
+footer section:last-child {
+	margin-right: 0;
+}
+footer h3 {
+	margin-bottom: 10px;
+}
+footer ul {
+	padding: 0;
+	list-style: none;
+}
+footer ul li {
+	margin-bottom: 5px;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}

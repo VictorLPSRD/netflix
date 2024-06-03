@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="BR-pt-20240226-popsignuptwoweeks-perspective_alpha_website_small">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/fontes/ChaletComprime.ttf">
+<link rel="stylesheet" href="src/styles/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./src/img/logo.png" alt="">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <select id="idiomas">
+                        <option value="+">Portugês</option>
+                        <option value="-">Inglês</option>
+                    </select>
+
+                </li>
+                <li>
+                    <a href="login.html" id="Login">Entrar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home" id="home">
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/8c45909c-fa69-4e95-98dd-d4da1d921a2b/BR-pt-20240520-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+            srcset="https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/8c45909c-fa69-4e95-98dd-d4da1d921a2b/BR-pt-20240520-popsignuptwoweeks-perspective_alpha_website_large.jpg 2000w, https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/8c45909c-fa69-4e95-98dd-d4da1d921a2b/BR-pt-20240520-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1279w, https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/8c45909c-fa69-4e95-98dd-d4da1d921a2b/BR-pt-20240520-popsignuptwoweeks-perspective_alpha_website_small.jpg 959w"
+            alt="" aria-hidden="true" class="default-ltr-cache-19j6xtr">
+        <div class="informacoes">
+            <div>
+                <h1>Filmes, séries e muito mais, sem limites</h1>
+                <br>
+                <p>A partir de R$ 18,90. Cancele quando quiser.</p>
+                <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+                <div class="input-group">
+                    <input type="text" placeholder="Email"><button>Vamos lá ></button>
+                </div>
+            </div>
+
+    </main>
+    <section class="anucio">
+        <div class="anu">
+            <h2>A Netflix que você adora a partir de R$ 18,90!</h2>
+            <p>Assista à Netflix com alguns intervalos para anúncios e economize.</p>
+            <a> Saiba mais</a>
+        </div>
+    </section>
+    <section class="anucio1">
+        <h2>Aproveite ainda mais sua assinatura</h2>
+        <div>
+            <img src="./src/img/anucio.png" alt="">
+        </div>
+
+    </section>
+
+
+    <section class="anucio1">
+        <h2>Mais motivos para assinar</h2>
+        <div>
+            <img src="./src/img/cardis.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="list_bnt">
+        <h2>Perguntas frequentes</h2>
+        <div>
+            <button class="button" onclick="toggleExplanation(1)">O que é a Netflix?</button>
+            <div id="explanation-1" class="explanation">
+                <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
+                    premiados em milhares de aparelhos conectados à internet.</p><br>
+
+                <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
+                    acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes..
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <button class="button" onclick="toggleExplanation(2)">Quanto custa a Netflix?</button>
+            <div id="explanation-2" class="explanation">
+                <p>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa
+                    mensal única. Os planos variam de R$ 18,90 a R$ 55,90 por mês. Sem contrato nem taxas extras.</p>
+            </div>
+        </div>
+
+        <div>
+            <button class="button" onclick="toggleExplanation(3)">Onde posso assistir?</button>
+            <div id="explanation-3" class="explanation">
+                <p>Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a
+                    assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo
+                    Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.</p><br>
+
+                <p>Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows
+                    10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve
+                    a Netflix com você para qualquer lugar..</p>
+            </div>
+        </div>
+
+        <div>
+            <button class="button" onclick="toggleExplanation(4)">Como faço para cancelar?</button>
+            <div id="explanation-4" class="explanation">
+                <p>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet
+                    com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua
+                    assinatura a qualquer momento..</p>
+            </div>
+        </div>
+
+        <div>
+            <button class="button" onclick="toggleExplanation(5)">O que eu posso assistir na Netflix?</button>
+            <div id="explanation-5" class="explanation">
+                <p>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e
+                    muito mais. Assista o quanto quiser, quando quiser..</p>
+            </div>
+        </div>
+
+        <div>
+            <button class="button" onclick="toggleExplanation(6)">A netflix é adequada para crianças?</button>
+            <div id="explanation-6" class="explanation">
+                <p>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu
+                    próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.</p>
+
+                <p> O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite
+                    restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos
+                    específicos que você não quer que elas assistam.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="input2">
+        <div class="input-group2">
+            <p class="texto2">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            <div class="inline-input">
+                <input type="text2" placeholder="Email">
+                <button>Vamos lá ></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section>
+            <h2>Dúvidas? Ligue para <a href="tel:08005912876">0800 591 2876</a></h2>
+        </section>
+        <div class="listaslink">
+            <section>
+                <h3>Perguntas frequentes</h3>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Relações com investidores</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Resgatar cartão pré-pago</h3>
+                <ul>
+                    <li><a href="#">Comprar cartão pré-pago</a></li>
+                    <li><a href="#">Formas de assistir</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Informações corporativas</h3>
+                <ul>
+                    <li><a href="#">Entre em contato</a></li>
+                    <li><a href="#">Teste de velocidade</a></li>
+                    <li><a href="#">Avisos legais</a></li>
+                    <li><a href="#">Só na Netflix</a></li>
+                </ul>
+            </section>
+        </div>
+
+    </footer>
+
+    <script src="src/js/index.js"></script>
+
+</body>
+
+</html>
